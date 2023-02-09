@@ -35,5 +35,5 @@ function resetGrid() {
 
 function clearGrid() {
     let gridBoxList = document.querySelectorAll(".grid-box");
-    gridBoxList.
-}
+    gridBoxList.forEach(gridBox => {gridBox.style.backgroundColor = null});
+};
