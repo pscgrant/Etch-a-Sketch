@@ -30,6 +30,10 @@ function resetGrid() {
     };
     makeGrid(num);
     let gridBoxList = document.querySelectorAll(".gridBox");
-    gridBoxList.forEach(gridBox => {gridBox.style.backgroundColor = null});
+    gridBoxList.forEach(gridBox => {gridBox.addEventListener("mouseover",changeColor)});
 };
 
+function clearGrid() {
+    let gridBoxList = document.querySelectorAll(".grid-box");
+    gridBoxList.
+}
