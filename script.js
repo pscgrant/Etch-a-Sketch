@@ -8,4 +8,9 @@ function makeGrid(number) {
         container.appendChild(div);
     }
     document.querySelector(".grid-size").textContent = `${number}x${number}`;
-}
+};
+
+function changeColor(event) {
+    event.target.style.backgroundColor = "Black";
+};
+
