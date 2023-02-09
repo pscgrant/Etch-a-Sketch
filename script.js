@@ -14,3 +14,22 @@ function changeColor(event) {
     event.target.style.backgroundColor = "Black";
 };
 
+function resetGrid() {
+    let num = prompt("Enter grid size less than or equal to 100:");
+    if (num === undefined || num === null || num === "") {
+        return;
+    };
+
+    while (num > 100) {
+        num = prompt("Number too big! Please enter grid size less than 100:")
+    };
+
+    const container = document.querySelector("container");
+    while (container.hasChildNodes()) {
+        container.removeChild(container.firstChild);
+    };
+    makeGrid(num);
+    let gridBoxList = document.querySelectorAll(".gridBox");
+    gridBoxList.forEach(gridBox => {gridBox.style.backgroundColor = null});
+};
+
