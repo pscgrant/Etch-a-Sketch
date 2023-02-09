@@ -37,3 +37,11 @@ function clearGrid() {
     let gridBoxList = document.querySelectorAll(".grid-box");
     gridBoxList.forEach(gridBox => {gridBox.style.backgroundColor = null});
 };
+
+let gridNumber = 16;
+makeGrid(gridNumber);
+let gridBoxList = document.querySelectorAll(".grid-box");
+gridBoxList.forEach(gridBox => {gridBox.addEventListener("mouseover", changeColor)});
+
+const clearBtn = document.querySelector(".clear-btn");
+const resetBtn = document.querySelector(".reset-btn");
