@@ -45,3 +45,6 @@ gridBoxList.forEach(gridBox => {gridBox.addEventListener("mouseover", changeColo
 
 const clearBtn = document.querySelector(".clear-btn");
 const resetBtn = document.querySelector(".reset-btn");
+
+clearBtn.addEventListener("click", clearGrid);
+resetBtn.addEventListener("click", resetGrid);
