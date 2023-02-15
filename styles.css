@@ -42,7 +42,7 @@ header {
 }
 
 .container {
-    display: flex;
+    display: grid;
     height: 70%;
     width: 70%;
     justify-content: center;
