@@ -11,7 +11,7 @@ function makeGrid(number) {
 };
 
 function changeColor(event) {
-    event.target.style.backgroundColor = "Black";
+    event.target.style.backgroundColor = "black";
 };
 
 function resetGrid() {
